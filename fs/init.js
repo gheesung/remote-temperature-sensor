@@ -25,6 +25,9 @@ let pin = 16;
 // MQTT topic
 let topic = 'myremotesensor/topic';
 
+// Device ID
+let deviceID = Cfg.get('device.id');
+
 // Initialize Adafruit DHT library
 let dht = DHT.create(pin, DHT.DHT11);
 
@@ -40,8 +43,8 @@ Timer.set(60000 /* milliseconds */, true /* repeat */, function() {
   let t = dht.readTemperature(0, 0);
   let h = dht.readHumidity(0);
   let hidx = dht.computeHeatIndex(t, h, 0);
-  let deviceID = Cfg.get('device.id');
-  let JSONStr = JSON.stringify({ device: deviceID, temp: t, humidity: h, heatidx: hidx });
+
+  let JSONStr = JSON.stringify({ deviceid: deviceID, temp: t, humidity: h, heatidx: hidx });
   print('Temperature:', t, '*C');
   print('Humidity:', h, '%');
   print('Heat index:', hidx, '*C');
