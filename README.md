@@ -1,8 +1,8 @@
-# ngs remote tempearature sensor (JavaScript)
+# remote tempearature sensor (JavaScript)
 
 ## Overview
 
-This app is a Adafruit DHT sensor usage example in JavaScript.
+This app send the temperature and humidity data to MQTT and Google Sheet. The interface to Google Sheet is a web URL.
 
 ## How to install this app
 
