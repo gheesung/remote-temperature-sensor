@@ -1,4 +1,14 @@
-# remote-temperature-sensor
-Temperature Monitoring using Mongoose OS.
+# ngs remote tempearature sensor (JavaScript)
 
-The remote IoT is using an ESP32 and DHT11 running on Mongoose OS. The data is sent to Google Apps Script to store into Google Sheet.
+## Overview
+
+This app is a Adafruit DHT sensor usage example in JavaScript.
+
+## How to install this app
+
+- Install and start [mos tool](https://mongoose-os.com/software.html)
+- Switch to the Project page, find and import this app, build and flash it:
+
+<p align="center">
+  <img src="https://mongoose-os.com/images/app1.gif" width="75%">
+</p>
