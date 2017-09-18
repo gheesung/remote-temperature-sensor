@@ -20,7 +20,8 @@ load('api_arduino_dht.js');
 load("api_http.js");
 
 // GPIO pin which has a DHT sensor data wire connected
-let pin = 16;
+let pin = 16; // ESP32
+//let pin = 4; //ESP8266 
 
 // MQTT topic
 let topic = 'myremotesensor/topic';
